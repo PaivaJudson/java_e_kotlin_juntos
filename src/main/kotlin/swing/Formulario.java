@@ -3,6 +3,8 @@ package swing;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import swing.Formulario.*;
+
 
 
 public class Formulario extends JFrame{
@@ -11,17 +13,16 @@ public class Formulario extends JFrame{
     private JTextField campoB = new JTextField("", 10);
     private JButton botao = new JButton("Somar");
 
-
     public Formulario(){
 
         super("Minha Janela");
         this.setSize(300, 150);
         JPanel pn1 = new JPanel();
-        pn1.add(new JLabel("Valor 1"));
+        pn1.add(new JLabel("Valor 1: "));
         pn1.add(campoA);
 
         JPanel pn2 = new JPanel();
-        pn2.add(new JLabel("Valor 2"));
+        pn2.add(new JLabel("Valor 2: "));
         pn2.add(campoB);
 
         JPanel pn3 = new JPanel();
@@ -42,9 +43,10 @@ public class Formulario extends JFrame{
         this.setVisible(true);
     }
 
-
-    public void executarAccao(){
-        
+    private void executarAccao(){
+        /*
+        JOptionPane.showMessageDialog(this, "Resultado da Soma = "+ExecutarKt.executarAcao(campoA.getText(), campoB.getText()));
+        */
     }
 
 }
