@@ -5,7 +5,7 @@ fun main() {
 
     //Formulario()
     var frame = Formulario()
-    frame.defaultCloseOperation
+
 }
 
 
